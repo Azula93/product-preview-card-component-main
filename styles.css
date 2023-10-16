@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    
+    /* min-width: 375px;
+    max-width: 1440px; */
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--Dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: 20vh -50vw;
+    
+}
+
+.container-card{
+    
+    margin: 170px auto 50px;
+    width: 330px;
+    height: 380px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    
+     
+}
+
+.img-blue img{
+   
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+
+.photo img{
+    
+    border: 5px solid white;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 70px;
+    left: 110px;
+    
+    
+    
+}
+
+.datos-personales{
+
+    /*border-box le dice al navegador que tenga en cuenta cualquier borde y relleno en los valores que especifique para el ancho y la altura de un elemento. Si establece el ancho de un elemento en 100 píxeles, esos 100 píxeles incluirán cualquier borde o relleno que haya agregado,  */
+    box-sizing: border-box; 
+    height: 150px;
+    padding: 75px;
+    background-color: white;
+    width: 100%;
+    margin-top: -10px;
+    text-align: center;
+    
+    
+}
+
+.datos-personales__city{
+
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Dark-grayish-blue);
+    
+
+}
+
+.datos-personales__name{
+
+    font-weight: 700;
+}
+
+.container-stats{
+
+
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid var(--Dark-grayish-blue);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+
+.stats{
+
+    
+    background-color: white;
+     
+}
+
+.numbers{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.stats__names{
+
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+
+}
+
+.attribution{
+
+    display: flex;
+    justify-content: center;
+}
+
+@media  screen and (min-width = 1440px) {
+    .container-card{
+        width: 375px;
+    }
+    
+}
